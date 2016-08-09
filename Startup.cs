@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
 namespace aspnetcoreapp
 {
@@ -13,6 +14,12 @@ namespace aspnetcoreapp
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddDbContext<ApplicationDbContext>(options =>
+                    options.UseInMemoryDatabase()
+                );
+
+            services.AddSingleton<Interfaces.IPersonRepository, Repositories.PersonRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -20,6 +27,7 @@ namespace aspnetcoreapp
 
             loggerFactory.AddConsole();
     loggerFactory.AddDebug();
+        
 
     if (env.IsDevelopment())
     {
