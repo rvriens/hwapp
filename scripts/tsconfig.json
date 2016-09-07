@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-      "noImplicitAny": true,
+      "noImplicitAny": false,
       "noEmitOnError": true,
       "sourceMap": true,
       "target": "es5"
   },
   "files": [
-      "./app.ts"
+      "./app.ts",
+      "./raytracer.ts"
   ],
   "compileOnSave": true
 }
