@@ -1,7 +1,24 @@
 {
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+    "tasks": [
+		{
+			"taskName": "build",
+			"isBuildCommand": true,
+			"showOutput": "always"
+		},
+    {
+			"taskName": "clean",
+			"isBuildCommand": true,
+			"showOutput": "always"
+		}
+	]
+
+
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
-    "version": "0.1.0",
+    /*"version": "0.1.0",
     "command": "dotnet",
     "isShellCommand": true,
     "args": [],
@@ -13,5 +30,29 @@
             "showOutput": "silent",
             "problemMatcher": "$msCompile"
         }
+    ]*/
+   /* 
+  "version": "0.1.0",
+  "isShellCommand": true,
+  "osx": {
+    "command": "sh",
+    "args": ["-c"],
+    "tasks": [
+      {
+        "name": "buid",
+        "args": ["open mysuperawesomefile.txt"]
+      }
+
     ]
+  },
+  "windows": {
+    "command": "cmd",
+    "args": ["/C"],
+    "tasks": [
+      {"name": "run", "args": ["start mysuperawesomefile.txt"]}
+    ]
+  
+  }
+*/
+
 }

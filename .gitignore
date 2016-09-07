@@ -6,3 +6,6 @@ obj/
 *.lock.json
 .vs/
 *.xproj.user
+
+
+node_modules/
