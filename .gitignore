@@ -10,3 +10,6 @@ obj/
 
 node_modules/
 npm-debug.log
+
+wwwroot/lib/
+wwwroot/scripts/

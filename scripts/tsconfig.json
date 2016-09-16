@@ -1,13 +1,16 @@
 {
-  "compilerOptions": {
-      "noImplicitAny": false,
-      "noEmitOnError": true,
-      "sourceMap": true,
-      "target": "es5"
-  },
-  "files": [
-      "./app.ts",
-      "./raytracer.ts"
-  ],
-  "compileOnSave": true
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "sourceMap": true,
+        "target": "es5",
+        "jsx": "react"
+    },
+    "files": [
+        // "./app.ts",
+        //"./raytracer.ts",
+        "./helloworld.jsx"
+    ],
+    "compileOnSave": true
+
 }
