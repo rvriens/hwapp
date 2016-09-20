@@ -53,7 +53,8 @@ gulp.task('copy-assets', function() {
         js: [
             './node_modules/react/dist/react-with-addons.js',
             './node_modules/react-dom/dist/react-dom.js',
-            './libs/js/require.js'
+            './libs/js/require.js',
+            './node_modules/jquery/dist/jquery.js'
         ],
         css: []
     };

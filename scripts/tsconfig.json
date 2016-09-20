@@ -7,9 +7,10 @@
         "jsx": "react"
     },
     "files": [
-        // "./app.ts",
-        //"./raytracer.ts",
-        "./helloworld.jsx"
+        "./app.ts",
+        "./raytracer.ts",
+        "./helloworld.jsx",
+        "./commentbox.tsx"
     ],
     "compileOnSave": true
 

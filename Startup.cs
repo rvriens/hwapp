@@ -20,6 +20,7 @@ namespace aspnetcoreapp
                 );
 
             services.AddSingleton<Interfaces.IPersonRepository, Repositories.PersonRepository>();
+            services.AddSingleton<Interfaces.ICommentRepository, Repositories.CommentRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
