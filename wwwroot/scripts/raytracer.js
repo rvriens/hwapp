@@ -232,3 +232,4 @@ function exec() {
     return rayTracer.render(defaultScene(), ctx, canv.width, canv.height);
 }
 exec();
+//# sourceMappingURL=raytracer.js.map

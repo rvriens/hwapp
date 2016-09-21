@@ -5,6 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 
+
+
+
 namespace aspnetcoreapp
 {
     public class Startup
@@ -20,6 +23,10 @@ namespace aspnetcoreapp
                 );
 
             services.AddSingleton<Interfaces.IPersonRepository, Repositories.PersonRepository>();
+
+            services.AddSignalR();
+
+            // https://www.myget.org/feed/aspnetcidev/package/nuget/Microsoft.AspNetCore.SignalR.Server
             services.AddSingleton<Interfaces.ICommentRepository, Repositories.CommentRepository>();
         }
 
